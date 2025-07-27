@@ -1,9 +1,11 @@
+import 'package:eglise_saint_martin_le_beau/data/history_data.dart';
 import 'package:eglise_saint_martin_le_beau/style/background.dart';
 import 'package:eglise_saint_martin_le_beau/views/scaffold/main_scaffold.dart';
 import 'package:flutter/material.dart';
+import 'package:historical_timeline/historical_timeline.dart';
 
 class ChurchTimeline extends StatelessWidget {
-  const ChurchTimeline({super.key});
+  ChurchTimeline({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +25,17 @@ class ChurchTimeline extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+              HistoricalTimeline(
+                startMargin: 20,
+                endMargin: 20,
+                size: Size(60, 60),
+                direction: TimelineDirection.vertical,
+
+                timelineAppearance: TimelineAppearance.cards,
+                events: HistoryData().data
+                    .map((item) => item.toTimelineEvent())
+                    .toList(),
               ),
             ],
           ),

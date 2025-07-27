@@ -4,6 +4,10 @@
 
 * `flutter run -d chrome`
 
+## Generate Json serialization classes
+
+* `dart run build_runner build`
+
 ## Generate Github Pages
 
 * `flutter build web --base-href "/eglise_saint_martin_le_beau/"`

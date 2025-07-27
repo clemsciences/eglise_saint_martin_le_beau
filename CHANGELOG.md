@@ -1,6 +1,11 @@
 # Versions
 
 ## 1.0.0+1
-* First version of the app:
-  * Tabs are defined.
-  * Images can be viewed.
+* Première version de l'application:
+  * Le menu principal est défini.
+  * Les images peuvent s'afficher.
+
+## 1.0.1+1
+* Début des sources.
+* Début de la frise chronologique.
+* Amélioration des vues.

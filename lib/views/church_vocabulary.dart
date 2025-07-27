@@ -17,6 +17,8 @@ class ChurchVocabularyPage extends StatelessWidget {
                   "Vocabulaire des églises",
                   style: Theme.of(context).textTheme.headlineLarge,
                 ),
+
+
               ),
             ],
           ),

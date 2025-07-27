@@ -12,4 +12,6 @@
 
 * `flutter build web --base-href "/eglise_saint_martin_le_beau/"`
 * `ghp-import -n -p -f build/web`
+* Visit the website at [https://clemsciences.github.io/eglise_saint_martin_le_beau/](https://clemsciences.github.io/eglise_saint_martin_le_beau/).
+
 

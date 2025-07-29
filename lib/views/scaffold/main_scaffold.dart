@@ -1,8 +1,9 @@
 import 'package:eglise_saint_martin_le_beau/models/scaffold_item.dart';
+import 'package:eglise_saint_martin_le_beau/routes/router_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../routes/saint_martin_le_beau_routes.dart';
+import 'package:eglise_saint_martin_le_beau/routes/saint_martin_le_beau_routes.dart';
 
 class MainSaintMartinScaffold extends StatelessWidget {
   final Widget body;
@@ -114,9 +115,14 @@ class MainSaintMartinScaffold extends StatelessWidget {
         ],
       ),
       appBar: AppBar(
-        title: Text(
-          'JEP 2025',
-          style: Theme.of(context).appBarTheme.titleTextStyle,
+        title: TextButton(
+          onPressed: () {
+            context.goPush(SaintMartinLeBeauRoutes.main);
+          },
+          child: Text(
+            "JEP 2025",
+            style: Theme.of(context).appBarTheme.titleTextStyle,
+          ),
         ),
         actions: [
           if (isSmallScreen)
@@ -186,43 +192,43 @@ class MainSaintMartinScaffold extends StatelessWidget {
     return [
       TextButton(
         onPressed: () {
-          context.push(SaintMartinLeBeauRoutes.main);
+          context.goPush(SaintMartinLeBeauRoutes.main);
         },
         child: const Text('Accueil'),
       ),
       TextButton(
         onPressed: () {
-          context.push(SaintMartinLeBeauRoutes.nameOrigin);
+          context.goPush(SaintMartinLeBeauRoutes.nameOrigin);
         },
         child: const Text("Origine de Saint-Martin-le-Beau"),
       ),
       TextButton(
         onPressed: () {
-          context.push(SaintMartinLeBeauRoutes.churchViewer);
+          context.goPush(SaintMartinLeBeauRoutes.churchViewer);
         },
         child: Text("Images de l'église"),
       ),
       TextButton(
         onPressed: () {
-          context.push(SaintMartinLeBeauRoutes.churchTimeline);
+          context.goPush(SaintMartinLeBeauRoutes.churchTimeline);
         },
         child: const Text("Chronologie de l'église"),
       ),
       TextButton(
         onPressed: () {
-          context.push(SaintMartinLeBeauRoutes.churchVocabulary);
+          context.goPush(SaintMartinLeBeauRoutes.churchVocabulary);
         },
         child: const Text('Vocabulaire des églises'),
       ),
       TextButton(
         onPressed: () {
-          context.push(SaintMartinLeBeauRoutes.sources);
+          context.goPush(SaintMartinLeBeauRoutes.sources);
         },
         child: Text("Sources"),
       ),
       TextButton(
         onPressed: () {
-          context.push(SaintMartinLeBeauRoutes.about);
+          context.goPush(SaintMartinLeBeauRoutes.about);
         },
         child: Text("A propos"),
       ),
@@ -245,7 +251,7 @@ class MainSaintMartinScaffold extends StatelessWidget {
                     controller.open();
                   }
                 } else {
-                  context.push(item.path);
+                  context.goPush(item.path);
                 }
               },
               child: Text(item.label),
@@ -272,7 +278,7 @@ class MainSaintMartinScaffold extends StatelessWidget {
         return ListTile(
           title: Text(item.label),
           onTap: () {
-            context.push(item.path);
+            context.goPush(item.path);
           },
         );
       }

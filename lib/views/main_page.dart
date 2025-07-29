@@ -67,44 +67,44 @@ class MainPage extends StatelessWidget {
                     ],
                   ),
                 ),
-                Container(
-                  color: Colors.white,
-                  padding: const EdgeInsets.all(40.0),
-                  child: Column(
-                    children: [
-                      Text(
-                        "",
-                        style: Theme.of(context).textTheme.headlineSmall
-                            ?.copyWith(color: Colors.black87),
-                      ),
-                      const SizedBox(height: 20),
-                      Text(
-                        "Nous sommes la Société archéologique de Touraine, une société savante fondée en 1840 qui promeut la préservation du patrimoine locale et encourage les recherches sur l'Histoire de la Touraine.",
-                        textAlign: TextAlign.center,
-                        style: Theme.of(
-                          context,
-                        ).textTheme.bodyMedium?.copyWith(color: Colors.black87),
-                      ),
-                      const SizedBox(height: 20),
-                      ElevatedButton(
-                        onPressed: () {
-                          launchUrl(
-                            Uri.parse("https://societearcheotouraine.eu/"),
-                          );
-                        },
-                        style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                            SatStyle.lightBlueColor,
-                          ),
-                        ),
-                        child: const Text(
-                          'Visiter le site internet',
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                // Container(
+                //   color: Colors.white,
+                //   padding: const EdgeInsets.all(40.0),
+                //   child: Column(
+                //     children: [
+                //       Text(
+                //         "",
+                //         style: Theme.of(context).textTheme.headlineSmall
+                //             ?.copyWith(color: Colors.black87),
+                //       ),
+                //       const SizedBox(height: 20),
+                //       Text(
+                //         "Nous sommes la Société archéologique de Touraine, une société savante fondée en 1840 qui promeut la préservation du patrimoine locale et encourage les recherches sur l'Histoire de la Touraine.",
+                //         textAlign: TextAlign.center,
+                //         style: Theme.of(
+                //           context,
+                //         ).textTheme.bodyMedium?.copyWith(color: Colors.black87),
+                //       ),
+                //       const SizedBox(height: 20),
+                //       ElevatedButton(
+                //         onPressed: () {
+                //           launchUrl(
+                //             Uri.parse("https://societearcheotouraine.eu/"),
+                //           );
+                //         },
+                //         style: ButtonStyle(
+                //           backgroundColor: MaterialStateProperty.all<Color>(
+                //             SatStyle.lightBlueColor,
+                //           ),
+                //         ),
+                //         child: const Text(
+                //           'Visiter le site internet',
+                //           style: TextStyle(color: Colors.white),
+                //         ),
+                //       ),
+                //     ],
+                //   ),
+                // ),
               ],
             ),
           ),

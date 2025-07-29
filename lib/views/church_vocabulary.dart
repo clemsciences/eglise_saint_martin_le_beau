@@ -15,7 +15,9 @@ class ChurchVocabularyPage extends StatelessWidget {
               Center(
                 child: SelectableText(
                   "Vocabulaire des églises",
-                  style: Theme.of(context).textTheme.headlineLarge,
+                  style: Theme.of(context).textTheme.headlineLarge?.copyWith(
+                    color: Theme.of(context).colorScheme.onPrimary,
+                  ),
                 ),
 
 

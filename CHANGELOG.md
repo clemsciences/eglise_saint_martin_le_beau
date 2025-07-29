@@ -9,3 +9,6 @@
 * Début des sources.
 * Début de la frise chronologique.
 * Amélioration des vues.
+
+## 1.0.2+1
+* Correction de la gestion des chemins pour le web.

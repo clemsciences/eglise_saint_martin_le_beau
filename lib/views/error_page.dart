@@ -1,3 +1,4 @@
+import 'package:eglise_saint_martin_le_beau/routes/router_extension.dart';
 import 'package:eglise_saint_martin_le_beau/routes/saint_martin_le_beau_routes.dart';
 import 'package:eglise_saint_martin_le_beau/views/scaffold/main_scaffold.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +32,7 @@ class ErrorPage extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  context.push(SaintMartinLeBeauRoutes.main);
+                  context.goPush(SaintMartinLeBeauRoutes.main);
                 },
                 child: Text("Accueil"),
               ),

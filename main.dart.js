@@ -37977,7 +37977,7 @@ A.nv.prototype={
 af(){return new A.O4()}}
 A.O4.prototype={
 H(a){var s=null
-return A.dv(s,A.AD(B.dj,A.b([new A.z8(4,new A.afM(A.b([A.a1E("images/panoramique/PXL_20250721_161025656.PANO_mini.jpg").c,A.a1E("images/panoramique/PXL_20250721_161226630.PANO_mini.jpg").c,A.a1E("images/panoramique/PXL_20250721_161330129.PANO_mini.jpg").c,A.a1E("images/panoramique/PXL_20250721_161420475.PANO_mini.jpg").c],t.Xs)),B.zp,new A.afN(),this.a.c,B.aG,!0,s),new A.de(B.eD,s,s,A.IV(s,s,A.IU(B.Dq,B.k,s,s),s,s,new A.afO(this),s,s,s),s),new A.de(B.hQ,s,s,A.IV(s,s,A.IU(B.Dr,B.k,s,s),s,s,new A.afP(this),s,s,s),s)],t.E),B.N,B.en),B.u,s,s,s,s,s,s,s,s,s,s)},
+return A.dv(s,A.AD(B.dj,A.b([new A.z8(4,new A.afM(A.b([A.a1E("assets/images/panoramique/PXL_20250721_161025656.PANO_mini.jpg").c,A.a1E("assets/images/panoramique/PXL_20250721_161226630.PANO_mini.jpg").c,A.a1E("assets/images/panoramique/PXL_20250721_161330129.PANO_mini.jpg").c,A.a1E("assets/images/panoramique/PXL_20250721_161420475.PANO_mini.jpg").c],t.Xs)),B.zp,new A.afN(),this.a.c,B.aG,!0,s),new A.de(B.eD,s,s,A.IV(s,s,A.IU(B.Dq,B.k,s,s),s,s,new A.afO(this),s,s,s),s),new A.de(B.hQ,s,s,A.IV(s,s,A.IU(B.Dr,B.k,s,s),s,s,new A.afP(this),s,s,s),s)],t.E),B.N,B.en),B.u,s,s,s,s,s,s,s,s,s,s)},
 l(){this.aw()
 this.a.c.l()},
 ar(){this.aJ()}}

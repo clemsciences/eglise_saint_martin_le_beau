@@ -21,3 +21,7 @@
 * Amélioration des vues pour citer les sources.
 * Ajout des liens vers les événements associés durantn les JEP 2025.
 * Ajout de sources dans le README.md.
+
+## 1.1.1+3
+* Ajout des images panoramiques de l'église.
+* Ajout du chemin "assets/" devant les chemins vers les images.

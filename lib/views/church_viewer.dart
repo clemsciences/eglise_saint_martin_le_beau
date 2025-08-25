@@ -65,16 +65,16 @@ class _ChurchViewerState extends State<ChurchViewer> {
     // );
     var galleryItems = [
       Image.asset(
-        "images/panoramique/PXL_20250721_161025656.PANO_mini.jpg",
+        "assets/images/panoramique/PXL_20250721_161025656.PANO_mini.jpg",
       ).image,
       Image.asset(
-        "images/panoramique/PXL_20250721_161226630.PANO_mini.jpg",
+        "assets/images/panoramique/PXL_20250721_161226630.PANO_mini.jpg",
       ).image,
       Image.asset(
-        "images/panoramique/PXL_20250721_161330129.PANO_mini.jpg",
+        "assets/images/panoramique/PXL_20250721_161330129.PANO_mini.jpg",
       ).image,
       Image.asset(
-        "images/panoramique/PXL_20250721_161420475.PANO_mini.jpg",
+        "assets/images/panoramique/PXL_20250721_161420475.PANO_mini.jpg",
       ).image,
     ];
 

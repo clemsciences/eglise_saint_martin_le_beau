@@ -87,33 +87,33 @@ class MainSaintMartinScaffold extends StatelessWidget {
         ),
       ),
       resizeToAvoidBottomInset: false,
-      bottomSheet: Row(
-        children: [
-          Expanded(
-            child: Container(
-              decoration: BoxDecoration(
-                border: Border.all(
-                  width: 1.0,
-                  color: Theme.of(
-                    context,
-                  ).colorScheme.onSurface.withOpacity(0.2),
-                ),
-              ),
-              child: SafeArea(
-                child: Text(
-                  '© 2025 La Société archéologique de Touraine. Tous droits réservés.',
-                  style: TextStyle(
-                    color: Theme.of(
-                      context,
-                    ).colorScheme.onSurface.withOpacity(0.7),
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-          ),
-        ],
-      ),
+      // bottomSheet: Row(
+      //   children: [
+      //     Expanded(
+      //       child: Container(
+      //         decoration: BoxDecoration(
+      //           border: Border.all(
+      //             width: 1.0,
+      //             color: Theme.of(
+      //               context,
+      //             ).colorScheme.onSurface.withOpacity(0.2),
+      //           ),
+      //         ),
+      //         child: SafeArea(
+      //           child: Text(
+      //             '© 2025 La Société archéologique de Touraine. Tous droits réservés.',
+      //             style: TextStyle(
+      //               color: Theme.of(
+      //                 context,
+      //               ).colorScheme.onSurface.withOpacity(0.7),
+      //             ),
+      //             textAlign: TextAlign.center,
+      //           ),
+      //         ),
+      //       ),
+      //     ),
+      //   ],
+      // ),
       appBar: AppBar(
         title: TextButton(
           onPressed: () {

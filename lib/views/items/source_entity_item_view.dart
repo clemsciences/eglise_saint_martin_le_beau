@@ -1,5 +1,6 @@
 import 'package:eglise_saint_martin_le_beau/models/source_entity.dart';
 import 'package:eglise_saint_martin_le_beau/style/style.dart';
+import 'package:eglise_saint_martin_le_beau/views/text/link_textspan.dart';
 import 'package:flutter/material.dart';
 
 class SourceEntityItemView extends StatelessWidget {
@@ -20,8 +21,27 @@ class SourceEntityItemView extends StatelessWidget {
               //   borderRadius: BorderRadius.circular(4),
               // ),
               child: SelectableText.rich(
-                TextSpan(text: source.officialDescription!),
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: Colors.white,fontWeight: FontWeight.normal),
+                TextSpan(
+                  children: [
+                    TextSpan(text: source.officialDescription!),
+                    if (source.url != null) TextSpan(text: "\n"),
+                    if (source.url != null)
+                      LinkTextSpan(
+                        url: source.url!,
+                        urlText: source.url!,
+                        linkStyle: Theme.of(context).textTheme.labelMedium
+                            ?.copyWith(
+                              color: Colors.white,
+                              decoration: TextDecoration.underline,
+                              decorationColor: Colors.white,
+                            ),
+                      ),
+                  ],
+                ),
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: Colors.white,
+                  fontWeight: FontWeight.normal,
+                ),
               ),
             )
           : ListTile(
@@ -36,8 +56,8 @@ class SourceEntityItemView extends StatelessWidget {
                             .map((item) => item.toString())
                             .join(),
                       ),
-                    if(source.timestamp != null)
-                    TextSpan(text: "${source.timestamp!.year}"),
+                    if (source.timestamp != null)
+                      TextSpan(text: "${source.timestamp!.year}"),
 
                     TextSpan(text: source.publisher),
                     TextSpan(text: " "),
@@ -46,7 +66,10 @@ class SourceEntityItemView extends StatelessWidget {
                     if (source.url != null) TextSpan(text: ", "),
                     if (source.url != null) TextSpan(text: "${source.url}"),
                   ],
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: Colors.white,fontWeight: FontWeight.normal)
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    color: Colors.white,
+                    fontWeight: FontWeight.normal,
+                  ),
                 ),
               ),
             ),

@@ -1,6 +1,7 @@
 import 'package:eglise_saint_martin_le_beau/style/background.dart';
 import 'package:eglise_saint_martin_le_beau/style/style.dart';
 import 'package:eglise_saint_martin_le_beau/views/scaffold/main_scaffold.dart';
+import 'package:eglise_saint_martin_le_beau/views/text/link_textspan.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -67,6 +68,39 @@ class MainPage extends StatelessWidget {
                     ],
                   ),
                 ),
+                Container(
+                  padding: EdgeInsets.all(20),
+                  child: Center(
+                    child: Column(
+                      children: [
+                        SelectableText.rich(
+                          TextSpan(
+                            children: [
+                              TextSpan(
+                                text:
+                                    "Deux événements auront lieu à l'église de Saint-martin-le-Beau. Il y a\n\u2022\u00a0",
+                              ),
+                              LinkTextSpan(
+                                url:
+                                    "https://journeesdupatrimoine.culture.gouv.fr/w/369139/evenement/18662169/exposition-artistique-cueillir-celebrer-creer",
+                                urlText:
+                                    "L'exposition artistique \"Cueillir, célébrer, créer\"",
+                              ),
+                              TextSpan(text: ", \n\u2022\u00a0"),
+                              LinkTextSpan(
+                                url:
+                                    "https://journeesdupatrimoine.culture.gouv.fr/w/369139/evenement/18658857/visites-commentees#/events/18658857",
+                                urlText: "Les visites commentées de l'église",
+                              ),
+                              TextSpan(text: "."),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+
                 // Container(
                 //   color: Colors.white,
                 //   padding: const EdgeInsets.all(40.0),

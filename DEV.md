@@ -10,8 +10,8 @@
 
 ## Generate Github Pages
 
-* `flutter build web --base-href "/eglise_saint_martin_le_beau/"`
+* `flutter build web --base-href "/"`
 * `ghp-import -n -p -f build/web`
-* Visit the website at [https://clemsciences.github.io/eglise_saint_martin_le_beau/](https://clemsciences.github.io/eglise_saint_martin_le_beau/).
+* Visit the website at [saintmartinlebeau.saintjacquesvaldecher.fr/](https://saintmartinlebeau.saintjacquesvaldecher.fr/).
 
 

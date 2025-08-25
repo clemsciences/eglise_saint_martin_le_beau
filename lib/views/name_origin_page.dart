@@ -1,5 +1,7 @@
+import 'package:eglise_saint_martin_le_beau/data/translations.dart';
 import 'package:eglise_saint_martin_le_beau/style/background.dart';
 import 'package:eglise_saint_martin_le_beau/views/scaffold/main_scaffold.dart';
+import 'package:eglise_saint_martin_le_beau/views/translation_widget.dart';
 import 'package:flutter/material.dart';
 
 class NameOriginPage extends StatelessWidget {
@@ -37,6 +39,8 @@ class NameOriginPage extends StatelessWidget {
                   SelectableText.rich(TextSpan(text: "")),
                   SelectableText.rich(TextSpan(text: "")),
                   SelectableText.rich(TextSpan(text: "")),
+
+                  TranslationWidget(translationExtract: turonenseMagnum[0])
                 ],
               ),
             )

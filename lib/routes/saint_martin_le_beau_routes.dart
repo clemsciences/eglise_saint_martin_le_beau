@@ -28,35 +28,59 @@ final GoRouter saintMartinLeBeauRouter = GoRouter(
   routes: [
     GoRoute(
       path: SaintMartinLeBeauRoutes.main,
-      builder: (context, state) => MainPage(),
+      pageBuilder: (context, state) {
+        return SatAnimation1(key: state.pageKey, child: MainPage());
+      },
+      // builder: (context, state) => MainPage(),
     ),
     GoRoute(
       path: SaintMartinLeBeauRoutes.churchTimeline,
-      builder: (context, state) => ChurchTimeline(),
+      pageBuilder: (context, state) {
+        return SatAnimation1(key: state.pageKey, child: ChurchTimeline());
+      },
+      // builder: (context, state) => ChurchTimeline(),
     ),
     GoRoute(
       path: SaintMartinLeBeauRoutes.churchVocabulary,
-      builder: (context, state) => ChurchVocabularyPage(),
+      pageBuilder: (context, state) {
+        return SatAnimation1(key: state.pageKey, child: ChurchVocabularyPage());
+      },
+      // builder: (context, state) => ChurchVocabularyPage(),
     ),
     GoRoute(
       path: SaintMartinLeBeauRoutes.nameOrigin,
-      builder: (context, state) => NameOriginPage(),
+      pageBuilder: (context, state) {
+        return SatAnimation1(key: state.pageKey, child: NameOriginPage());
+      },
+      // builder: (context, state) => NameOriginPage(),
     ),
     GoRoute(
       path: SaintMartinLeBeauRoutes.churchItems,
-      builder: (context, state) => ChurchItemsPage(),
+      pageBuilder: (context, state) {
+        return SatAnimation1(key: state.pageKey, child: ChurchItemsPage());
+      },
+      // builder: (context, state) => ChurchItemsPage(),
     ),
     GoRoute(
       path: SaintMartinLeBeauRoutes.sources,
-      builder: (context, state) => SourcePage(),
+      pageBuilder: (context, state) {
+        return SatAnimation1(key: state.pageKey, child: SourcePage());
+      },
+      // builder: (context, state) => SourcePage(),
     ),
     GoRoute(
       path: SaintMartinLeBeauRoutes.about,
-      builder: (context, state) => MorePage(),
+      pageBuilder: (context, state) {
+        return SatAnimation1(key: state.pageKey, child: MorePage());
+      },
+      // builder: (context, state) => MorePage(),
     ),
     GoRoute(
       path: SaintMartinLeBeauRoutes.churchViewer,
-      builder: (context, state) => ChurchViewer(),
+      pageBuilder: (context, state) {
+        return SatAnimation1(key: state.pageKey, child: ChurchViewer());
+      },
+      // builder: (context, state) => ChurchViewer(),
     ),
   ],
 );

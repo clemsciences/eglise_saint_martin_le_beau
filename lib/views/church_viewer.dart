@@ -1,4 +1,6 @@
 // import 'package:easy_image_viewer/easy_image_viewer.dart';
+import 'package:eglise_saint_martin_le_beau/routes/router_extension.dart';
+import 'package:eglise_saint_martin_le_beau/routes/saint_martin_le_beau_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:photo_view/photo_view_gallery.dart';
@@ -110,13 +112,25 @@ class _ChurchViewerState extends State<ChurchViewer> {
             // onPageChanged: onPageChanged,
           ),
           Align(
+            alignment: Alignment.topLeft,
+            child: IconButton(
+              onPressed: () {
+                context.goPush(SaintMartinLeBeauRoutes.main);
+              },
+              icon: Icon(Icons.home, color: Colors.white),
+            ),
+          ),
+          Align(
             alignment: Alignment.centerLeft,
             child: IconButton(
               onPressed: () {
-                widget.pageController.previousPage(
-                  duration: Duration(milliseconds: 200),
-                  curve: Curves.easeInOut,
-                );
+                final page = widget.pageController.page;
+                if (page != null && page >= 1.0) {
+                  widget.pageController.previousPage(
+                    duration: Duration(milliseconds: 200),
+                    curve: Curves.easeInOut,
+                  );
+                }
               },
               icon: Icon(Icons.arrow_left, color: Colors.white),
             ),
@@ -125,10 +139,13 @@ class _ChurchViewerState extends State<ChurchViewer> {
             alignment: Alignment.centerRight,
             child: IconButton(
               onPressed: () {
-                widget.pageController.nextPage(
-                  duration: Duration(milliseconds: 200),
-                  curve: Curves.easeInOut,
-                );
+                final page = widget.pageController.page;
+                if (page != null && page < (galleryItems.length - 1)) {
+                  widget.pageController.nextPage(
+                    duration: Duration(milliseconds: 200),
+                    curve: Curves.easeInOut,
+                  );
+                }
               },
               icon: Icon(Icons.arrow_right, color: Colors.white),
             ),

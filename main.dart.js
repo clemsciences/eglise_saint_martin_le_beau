@@ -37915,7 +37915,7 @@ $S:230}
 A.wg.prototype={
 ai(){return new A.O0()}}
 A.O0.prototype={
-I(a){var s=null,r=A.b([A.a1z("images/panoramique/PXL_20250721_161025656.PANO_mini.jpg").c,A.a1z("images/panoramique/PXL_20250721_161226630.PANO_mini.jpg").c,A.a1z("images/panoramique/PXL_20250721_161330129.PANO_mini.jpg").c,A.a1z("images/panoramique/PXL_20250721_161420475.PANO_mini.jpg").c],t.Xs)
+I(a){var s=null,r=A.b([A.a1z("assets/images/panoramique/PXL_20250721_161025656.PANO_mini.jpg").c,A.a1z("assets/images/panoramique/PXL_20250721_161226630.PANO_mini.jpg").c,A.a1z("assets/images/panoramique/PXL_20250721_161330129.PANO_mini.jpg").c,A.a1z("assets/images/panoramique/PXL_20250721_161420475.PANO_mini.jpg").c],t.Xs)
 return A.dv(s,A.Ay(B.eC,A.b([new A.z3(4,new A.afo(r),B.zn,new A.afp(),this.a.c,B.aG,!0,s),new A.e1(B.cy,s,s,A.xI(s,s,A.xH(B.Ds,B.k,s,s),s,s,new A.afq(a),s,s,s),s),new A.e1(B.eD,s,s,A.xI(s,s,A.xH(B.Do,B.k,s,s),s,s,new A.afr(this),s,s,s),s),new A.e1(B.hR,s,s,A.xI(s,s,A.xH(B.Dp,B.k,s,s),s,s,new A.afs(this,r),s,s,s),s)],t.D),B.K,B.en),B.u,s,s,s,s,s,s,s,s,s,s)},
 l(){this.az()
 this.a.c.l()},

@@ -82,14 +82,14 @@ class MainPage extends StatelessWidget {
                               ),
                               LinkTextSpan(
                                 url:
-                                    "https://journeesdupatrimoine.culture.gouv.fr/w/369139/evenement/18662169/exposition-artistique-cueillir-celebrer-creer",
+                                    "https://journeesdupatrimoine.culture.gouv.fr/w/377623/evenement/18662169/exposition-artistique-cueillir-celebrer-creer",
                                 urlText:
                                     "L'exposition artistique \"Cueillir, célébrer, créer\"",
                               ),
                               TextSpan(text: ", \n\u2022\u00a0"),
                               LinkTextSpan(
                                 url:
-                                    "https://journeesdupatrimoine.culture.gouv.fr/w/369139/evenement/18658857/visites-commentees#/events/18658857",
+                                    "https://journeesdupatrimoine.culture.gouv.fr/w/377623/evenement/18658857/visites-commentees#/events/18658857",
                                 urlText: "Les visites commentées de l'église",
                               ),
                               TextSpan(text: "."),

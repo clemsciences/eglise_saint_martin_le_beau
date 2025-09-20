@@ -534,6 +534,12 @@ class ChurchVocabularyData {
       definition:
           "(du latin claustrum, fermé) : partie d'un monastère formé de quatre galeries couvertes, entourant une cour ou un jardin. Elle est destinée à la promenade et à la médiation des religieux.",
     ),
+    // https://www.cnrtl.fr/definition/collat%C3%A9ral
+    ChurchWordEntry(
+      word: "Collatéral",
+      definition:
+          "Nef latérale d'une église moins élevée que la nef principale.",
+    ),
     ChurchWordEntry(
       word: "Colombage",
       definition:
@@ -1046,6 +1052,13 @@ class ChurchVocabularyData {
       definition:
           "(du latin trans, au-delà, et septum, clôture) : nef transversale coupant la principale et donnant à l'église la forme symbolique de la croix. Lorsque le transept a une longueur supérieure à la largeur de l'édifice, il est dit saillant.",
     ),
+    // Une travée : https://www.cnrtl.fr/definition/trav%C3%A9e
+    ChurchWordEntry(
+      word: "Travée",
+      definition:
+          "Partie d'un plafond comprise entre deux maîtresses poutres ou entre la muraille et une maîtresse poutre.",
+    ),
+
     ChurchWordEntry(
       word: "Trumeau",
       definition:

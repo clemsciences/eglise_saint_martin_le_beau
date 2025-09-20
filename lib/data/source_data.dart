@@ -58,6 +58,8 @@ Date d'enquête: 2014 ; Dernière mise à jour en 2022
     SourceBookExtract(source: paroissesDeTouraine, page: 22, description: "Table 1 : Lieux de culte mentionnés avant 600 (hors Tours). Saint-Martin-le-Beau n'y figure pas.",
     internalReference: "PT22"),
 
+    SourceEntity(title: "POP : la plateforme ouverte du patrimoine. Eglise paroissiale Saint-Martin.", authors: [], url: "https://pop.culture.gouv.fr/notice/merimee/PA00098082")
+
     // https://gallica.bnf.fr/ark:/12148/bpt6k12397p/f317.item
 
     // https://gallica.bnf.fr/ark:/12148/bpt6k56242035

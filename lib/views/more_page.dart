@@ -25,9 +25,9 @@ class MorePage extends StatelessWidget {
                     LimitedItem(
                       child: Card(
                         child: ListTile(
-                          title: SelectableText(""),
+                          title: SelectableText("Caroline LECLERC"),
 
-                          subtitle: SelectableText(""),
+                          subtitle: SelectableText("Sculptrice sur terre. Organisatrice de l'exposition artistique et des visites guidées."),
                         ),
                       ),
                     ),
@@ -35,9 +35,9 @@ class MorePage extends StatelessWidget {
                     LimitedItem(
                       child: Card(
                         child: ListTile(
-                          title: SelectableText(""),
+                          title: SelectableText("acques MAILLARD"),
 
-                          subtitle: SelectableText(""),
+                          subtitle: SelectableText("Architecte DPLG. Animateur des visites guidées."),
                         ),
                       ),
                     ),
@@ -45,8 +45,8 @@ class MorePage extends StatelessWidget {
                     LimitedItem(
                       child: Card(
                         child: ListTile(
-                          title: SelectableText("Clément Besnier"),
-                          subtitle: SelectableText(""),
+                          title: SelectableText("Clément BESNIER"),
+                          subtitle: SelectableText("Membre de la Société archéologique de Touraine. Animateur des visites guidées."),
                         ),
                       ),
                     ),

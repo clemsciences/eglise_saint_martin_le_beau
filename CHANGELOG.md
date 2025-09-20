@@ -25,3 +25,9 @@
 ## 1.1.1+3
 * Ajout des images panoramiques de l'église.
 * Ajout du chemin "assets/" devant les chemins vers les images.
+
+### 1.2.0+4
+* Traduction finale.
+* Retrait de la page sur le mobilier de l'église.
+* Ajout des contacts.
+* Ajout d'une source.

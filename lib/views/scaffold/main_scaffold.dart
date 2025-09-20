@@ -35,11 +35,11 @@ class MainSaintMartinScaffold extends StatelessWidget {
           path: SaintMartinLeBeauRoutes.churchTimeline,
           children: null,
         ),
-        ScaffoldItem(
-          label: "Mobilier",
-          path: SaintMartinLeBeauRoutes.churchItems,
-          children: null,
-        ),
+        // ScaffoldItem(
+        //   label: "Mobilier",
+        //   path: SaintMartinLeBeauRoutes.churchItems,
+        //   children: null,
+        // ),
         ScaffoldItem(
           label: "Vocabulaire",
           path: SaintMartinLeBeauRoutes.churchVocabulary,

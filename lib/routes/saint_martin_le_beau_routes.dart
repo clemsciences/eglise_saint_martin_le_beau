@@ -24,6 +24,7 @@ class SaintMartinLeBeauRoutes extends AppRoutes {
 final GoRouter saintMartinLeBeauRouter = GoRouter(
   debugLogDiagnostics: true,
   initialLocation: SaintMartinLeBeauRoutes.main,
+
   errorBuilder: (context, state) => ErrorPage(),
   routes: [
     GoRoute(
@@ -54,13 +55,13 @@ final GoRouter saintMartinLeBeauRouter = GoRouter(
       },
       // builder: (context, state) => NameOriginPage(),
     ),
-    GoRoute(
-      path: SaintMartinLeBeauRoutes.churchItems,
-      pageBuilder: (context, state) {
-        return SatAnimation1(key: state.pageKey, child: ChurchItemsPage());
-      },
-      // builder: (context, state) => ChurchItemsPage(),
-    ),
+    // GoRoute(
+    //   path: SaintMartinLeBeauRoutes.churchItems,
+    //   pageBuilder: (context, state) {
+    //     return SatAnimation1(key: state.pageKey, child: ChurchItemsPage());
+    //   },
+    //   // builder: (context, state) => ChurchItemsPage(),
+    // ),
     GoRoute(
       path: SaintMartinLeBeauRoutes.sources,
       pageBuilder: (context, state) {

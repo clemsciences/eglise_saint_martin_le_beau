@@ -1,9 +1,8 @@
 import 'package:eglise_saint_martin_le_beau/models/scaffold_item.dart';
 import 'package:eglise_saint_martin_le_beau/routes/router_extension.dart';
+import 'package:eglise_saint_martin_le_beau/routes/saint_martin_le_beau_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
-import 'package:eglise_saint_martin_le_beau/routes/saint_martin_le_beau_routes.dart';
 
 class MainSaintMartinScaffold extends StatelessWidget {
   final Widget body;
@@ -18,13 +17,29 @@ class MainSaintMartinScaffold extends StatelessWidget {
     ),
     ScaffoldItem(
       label: "Origine",
-      path: SaintMartinLeBeauRoutes.nameOrigin,
-      children: null,
+      path: "",
+      children: [
+        ScaffoldItem(
+          label: "Saint Martin",
+          path: SaintMartinLeBeauRoutes.saintMartin,
+          children: null,
+        ),
+        ScaffoldItem(
+          label: "Nom de la ville",
+          path: SaintMartinLeBeauRoutes.nameOrigin,
+          children: null,
+        ),
+      ],
     ),
     ScaffoldItem(
       label: "Eglise",
       path: SaintMartinLeBeauRoutes.main,
       children: [
+        ScaffoldItem(
+          label: "Description architecturale",
+          path: SaintMartinLeBeauRoutes.churchDescription,
+          children: null,
+        ),
         ScaffoldItem(
           label: "Images de l'église",
           path: SaintMartinLeBeauRoutes.churchViewer,

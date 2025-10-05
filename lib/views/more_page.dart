@@ -35,7 +35,7 @@ class MorePage extends StatelessWidget {
                     LimitedItem(
                       child: Card(
                         child: ListTile(
-                          title: SelectableText("acques MAILLARD"),
+                          title: SelectableText("Jacques MAILLARD"),
 
                           subtitle: SelectableText("Architecte DPLG. Animateur des visites guidées."),
                         ),
@@ -46,7 +46,12 @@ class MorePage extends StatelessWidget {
                       child: Card(
                         child: ListTile(
                           title: SelectableText("Clément BESNIER"),
-                          subtitle: SelectableText("Membre de la Société archéologique de Touraine. Animateur des visites guidées."),
+                          subtitle: SelectableText.rich(TextSpan(
+                            children: [
+                              TextSpan(text: "Membre de la Société archéologique de Touraine. Animateur des visites guidées. "),
+                              LinkTextSpan(url: "https://clementbesnier.eu", urlText: "clementbesnier.eu")
+                            ]
+                          ),)
                         ),
                       ),
                     ),

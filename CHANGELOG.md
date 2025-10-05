@@ -31,3 +31,9 @@
 * Retrait de la page sur le mobilier de l'église.
 * Ajout des contacts.
 * Ajout d'une source.
+
+### 1.3.0+5
+* Ajout des pages suiavntes :
+  * /eglise/description : pour la description architecturale de l'église,
+  * /saint-martin : pour une description sommaire de la vie de saint Martin (page vide pour le moment).
+* La frise chronologique de l'église est terminée.

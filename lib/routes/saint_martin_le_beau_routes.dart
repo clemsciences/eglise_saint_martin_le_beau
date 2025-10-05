@@ -1,3 +1,4 @@
+import 'package:eglise_saint_martin_le_beau/views/church_description_page.dart';
 import 'package:eglise_saint_martin_le_beau/routes/routes.dart';
 import 'package:eglise_saint_martin_le_beau/views/church_items_page.dart';
 import 'package:eglise_saint_martin_le_beau/views/church_timeline.dart';
@@ -7,6 +8,7 @@ import 'package:eglise_saint_martin_le_beau/views/error_page.dart';
 import 'package:eglise_saint_martin_le_beau/views/main_page.dart';
 import 'package:eglise_saint_martin_le_beau/views/more_page.dart';
 import 'package:eglise_saint_martin_le_beau/views/name_origin_page.dart';
+import 'package:eglise_saint_martin_le_beau/views/saint_martin_page.dart';
 import 'package:eglise_saint_martin_le_beau/views/source_page.dart';
 import 'package:go_router/go_router.dart';
 
@@ -15,7 +17,9 @@ class SaintMartinLeBeauRoutes extends AppRoutes {
   static const String churchTimeline = "/frise-chronologique";
   static const String churchVocabulary = "/vocabulaire-eglise";
   static const String nameOrigin = "/origine";
+  static const String saintMartin = "/saint-martin";
   static const String churchItems = "/eglise";
+  static const String churchDescription = "/eglise/description";
   static const String sources = "/sources";
   static const String about = "/a-propos";
   static const String churchViewer = "/eglise/panorama";
@@ -54,6 +58,18 @@ final GoRouter saintMartinLeBeauRouter = GoRouter(
         return SatAnimation1(key: state.pageKey, child: NameOriginPage());
       },
       // builder: (context, state) => NameOriginPage(),
+    ),GoRoute(
+      path: SaintMartinLeBeauRoutes.saintMartin,
+      pageBuilder: (context, state) {
+        return SatAnimation1(key: state.pageKey, child: SaintMartinPage());
+      },
+      // builder: (context, state) => NameOriginPage(),
+    ),
+    GoRoute(path: SaintMartinLeBeauRoutes.churchDescription,
+        pageBuilder: (context, state) {
+          return SatAnimation1(
+              key: state.pageKey, child: ChurchDescriptionPage());
+        }
     ),
     // GoRoute(
     //   path: SaintMartinLeBeauRoutes.churchItems,

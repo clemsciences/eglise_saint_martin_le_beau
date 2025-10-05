@@ -48,7 +48,7 @@ class AppTheme {
       ),
     ),
     cardTheme: CardThemeData(color: Colors.white),
-    bottomAppBarTheme: BottomAppBarTheme(color: SatStyle.lightBlueColor),
+    bottomAppBarTheme: BottomAppBarThemeData(color: SatStyle.lightBlueColor),
     // buttonTheme: ButtonThemeData(
     //   buttonColor: SatStyle.softDarkBlueColor,
     // ),
@@ -81,7 +81,7 @@ class AppTheme {
       bodyLarge: TextStyle(),
       bodySmall: TextStyle(),
       displayMedium: TextStyle(),
-      headlineMedium: TextStyle(),
+      headlineMedium: TextStyle(fontSize: 23, fontStyle: FontStyle.italic),
       headlineSmall: TextStyle(),
       labelLarge: TextStyle(),
       labelMedium: TextStyle(
@@ -90,8 +90,8 @@ class AppTheme {
         color: Colors.grey,
       ),
       labelSmall: TextStyle(),
-      titleMedium: TextStyle(),
-      titleSmall: TextStyle(),
+      titleMedium: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+      titleSmall: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
     ),
   );
 }

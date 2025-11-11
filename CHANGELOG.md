@@ -33,7 +33,12 @@
 * Ajout d'une source.
 
 ### 1.3.0+5
-* Ajout des pages suiavntes :
+* Ajout des pages suivantes :
   * /eglise/description : pour la description architecturale de l'église,
   * /saint-martin : pour une description sommaire de la vie de saint Martin (page vide pour le moment).
 * La frise chronologique de l'église est terminée.
+
+### 1.4.0+6
+* Ajout d'une photo de l'église sur la page principale.
+* Ajout de quatre modes de lecture pour la traduction du texte sur l'origine du nom de Saint-Martin-le-Beau.
+* Amélioration de la vue sur les sources.

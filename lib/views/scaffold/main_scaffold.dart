@@ -77,16 +77,17 @@ class MainSaintMartinScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-    final isSmallScreen = screenWidth < 800; // Adjust breakpoint as needed
+    final isSmallScreen = screenWidth < 800;
 
     return Scaffold(
       body: SafeArea(
-        child: LayoutBuilder(
-          builder: (c, constraints) => PopScope(
-            canPop: Scaffold.of(c).isEndDrawerOpen,
+        child: Builder(
+          builder: (scaffoldContext) => PopScope(
+            canPop: !Scaffold.of(scaffoldContext).hasEndDrawer ||
+                !Scaffold.of(scaffoldContext).isEndDrawerOpen,
             onPopInvokedWithResult: (canPop, result) {
-              if (Scaffold.of(c).isEndDrawerOpen) {
-                Scaffold.of(c).closeEndDrawer();
+              if (Scaffold.of(scaffoldContext).isEndDrawerOpen) {
+                Scaffold.of(scaffoldContext).closeEndDrawer();
               } else {
                 // Pop page only if the page is not the last one in the route history
                 if (context.canPop()) {
@@ -96,7 +97,6 @@ class MainSaintMartinScaffold extends StatelessWidget {
               // If the drawer was open, PopScope's canPop was false,
               // so we need to manually pop if it's now closed.
             },
-
             child: body,
           ),
         ),

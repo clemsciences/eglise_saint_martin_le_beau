@@ -100,6 +100,37 @@ class MainPage extends StatelessWidget {
                     ),
                   ),
                 ),
+                Container(
+                  width: double.infinity, // Prend toute la largeur
+                  constraints: BoxConstraints(
+                    maxHeight:
+                        MediaQuery.of(context).size.height *
+                        0.8, // 80% de la hauteur
+                  ),
+                  child: Image.asset(
+                    "images/jpg/face-avant-eglise.jpg",
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    fit: BoxFit.contain,
+                  ),
+                ),
+                Container(
+                  width: constraints.maxWidth,
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 8,
+                    horizontal: 16,
+                  ),
+                  color: Colors.grey[200],
+                  child: Text(
+                    "Face avant de l'église Saint-Martin-le-Beau - Clément Besnier 2025",
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontStyle: FontStyle.italic,
+                      color: Colors.grey[800],
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                SizedBox(height: 64),
 
                 // Container(
                 //   color: Colors.white,

@@ -108,7 +108,7 @@ class MainPage extends StatelessWidget {
                         0.8, // 80% de la hauteur
                   ),
                   child: Image.asset(
-                    "images/jpg/face-avant-eglise.jpg",
+                    "assets/images/jpg/face-avant-eglise.jpg",
                     width: MediaQuery.of(context).size.width * 0.5,
                     fit: BoxFit.contain,
                   ),

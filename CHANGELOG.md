@@ -42,3 +42,6 @@
 * Ajout d'une photo de l'église sur la page principale.
 * Ajout de quatre modes de lecture pour la traduction du texte sur l'origine du nom de Saint-Martin-le-Beau.
 * Amélioration de la vue sur les sources.
+
+### 1.4.1+7
+* Correction de l'image principale.
